@@ -10,6 +10,6 @@ end
 config :tesla, adapter: Tesla.Adapter.Mint
 
 config :advent_of_code, :config,
-  allow_network?: false,
+  allow_network?: true,
   year: System.get_env("AOC_YEAR") || default_year.(),
   session: System.get_env("AOC_SESSION") || ""
